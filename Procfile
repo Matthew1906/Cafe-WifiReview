@@ -1,0 +1,1 @@
+web: gunicorn blogPosts:app --preload
