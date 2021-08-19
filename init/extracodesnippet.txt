@@ -3,7 +3,7 @@
 # admin = User(name='Matthew Adrianus Mulyono')
 # db.session.add(admin)
 # db.session.commit()
-# with open('cafe-data.csv', encoding='utf-8') as csv_file:
+# with open('init/cafe-data.csv', encoding='utf-8') as csv_file:
 #     csv_data = list(reader(csv_file, delimiter=','))
 #     for row in csv_data[1:]:
 #         # print(row)

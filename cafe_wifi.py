@@ -66,26 +66,7 @@ class Review(db.Model):
     cafe_id = db.Column(db.Integer, db.ForeignKey('cafes.id'))
     parent_cafe = relationship("Cafe", back_populates='reviews')
 
-db.create_all()
-admin = User(name='Matthew Adrianus Mulyono')
-db.session.add(admin)
-db.session.commit()
-with open('cafe-data.csv', encoding='utf-8') as csv_file:
-    csv_data = list(reader(csv_file, delimiter=','))
-    for row in csv_data[1:]:
-        # print(row)
-        new_cafe = Cafe(
-            name= row[0],
-            image_url = row[1],
-            location= row[2],
-            open_time= row[3],
-            close_time= row[4],
-            coffee_rating= row[5],
-            wifi_rating= row[6],
-            power_rating= row[7],
-        )
-        db.session.add(new_cafe)
-        db.session.commit()
+# Paste uncommented extra code snippet here!
 
 # Default loading user function
 @login_manager.user_loader
