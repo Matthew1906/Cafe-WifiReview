@@ -1,1 +1,1 @@
-web: gunicorn blogPosts:app --preload
+web: gunicorn cafe_wifi:app --preload
